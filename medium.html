@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 
 <form action="#" method="GET" name="Info_Form">
+   <label>Name</label>
    <p>First Name</p> <input type="text" name="FirstName">
    <p>Last Name</p> <input type="text" name="LastName">
    <br>
-   <p>Gender</p>
-   <input type="radio" name="gender" value="Male">
-   <input type="radio" name="gender" value="Female">
-
-
-
+   <label>Gender</label>
+   <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+   <input type="radio" name="gender" value="fem ale" id="female"><label for="female">Female</label>
+   <br>
+   <label>Favorite Sport</label>
+   <select>
+       <optgroup label="Ball Sports">
+       <option>Soccer</option>
+       <option>Football</option>
+       <option>Baseball</option>
+       </optgroup>
+       <optgroup label="Field Sports">
+           <option>Track</option>
+           <option>Discuss</option>
+           <option>Javelin</option>
+           <option>Cross Country</option>
+       </optgroup>
+   </select>
+   <p>What do you like on your pizza</p>
+    <input type="checkbox" name="toppings" id="cheese"><label for="cheese">Cheese</label>
+    <input type="checkbox" name="toppings" id="peperoni"><label for="peperoni">Peperoni</label>
+    <input type="checkbox" name="toppings" id="sausage"><label for="sausage">Sausage</label>
+    <input type="checkbox" name="toppings" id="bacon"><label for="bacon">Bacon</label>
+    <input type="checkbox" name="toppings" id="onion"><label for="onion">Onion</label>
+    <input type="checkbox" name="toppings" id="pepper"><label for="pepper">Pepper</label>
+    <input type="checkbox" name="toppings" id="anchovies"><label for="anchovies">Anchovies</label>
+   <input type="submit" value="Save">
 
 </form>
